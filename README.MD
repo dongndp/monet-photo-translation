@@ -64,6 +64,7 @@ if RUN_LOCAL:
     BASE_DIR = './' <= Change to your local path
 
 else:
+
     BASE_DIR = '/kaggle/input/'
 
 MONET_DIR = f'{BASE_DIR}gan-getting-started/monet_tfrec/'
