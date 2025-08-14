@@ -57,18 +57,28 @@ Here are some great papers and articles that helped and inspired me.
 
 This notebook is configured to run directly on Kaggle with GPU. If you want to try out on your own machine, you need to download the data from Kaggle and adjust the paths to the data. Please see section 2. Import Library and Setup of the notebook.
 
-# Define paths
 RUN_LOCAL = False <= Change to False
+
 if RUN_LOCAL:
+
     BASE_DIR = './' <= Change to your local path
+
 else:
     BASE_DIR = '/kaggle/input/'
+
 MONET_DIR = f'{BASE_DIR}gan-getting-started/monet_tfrec/'
+
 PHOTO_DIR = f'{BASE_DIR}gan-getting-started/photo_tfrec/'
+
 if RUN_LOCAL:
+
     OUTPUT_DIR = f'{BASE_DIR}/working/images/'
+
     SUBMISSION_FILE = f'{BASE_DIR}/images'
+
 else:
+
     OUTPUT_DIR = '../tmp/'
+
     SUBMISSION_FILE = '/kaggle/working/images'
 
